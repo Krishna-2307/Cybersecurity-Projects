@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 400px;
+    
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#strengthBar {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#strengthBar::before {
+    content: attr(data-label);
+    position: absolute;
+    top: -22px;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+#strengthLabel {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+#strengthFill {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+
+#timeToCrack {
+    margin-top: 5px;
+    font-style: italic;
+    color: #555;
+}
