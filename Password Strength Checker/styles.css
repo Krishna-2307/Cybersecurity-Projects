@@ -5,7 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 .container {
@@ -14,6 +15,10 @@ body {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 400px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
     
 }
 
@@ -48,8 +53,15 @@ input[type="password"] {
 #strengthLabel {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: #201e1e;
 }
+
+#timeToCrack {
+    margin-top: 5px;
+    font-style: italic;
+    color: #201e1e;
+}
+
 
 
 #strengthFill {
@@ -66,8 +78,3 @@ ul {
 }
 
 
-#timeToCrack {
-    margin-top: 5px;
-    font-style: italic;
-    color: #555;
-}
